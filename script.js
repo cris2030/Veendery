@@ -7,6 +7,7 @@ let imagenes = [
 let index = 0;
 
 function cambiarImagen(){
+
     index++;
 
     if(index >= imagenes.length){

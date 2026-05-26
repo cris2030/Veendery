@@ -1,86 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veendery</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Música de fondo -->
+    <!-- Música -->
     <audio autoplay loop controls class="music">
         <source src="music/musica.mp3" type="audio/mpeg">
     </audio>
 
     <!-- Marquesina -->
     <marquee class="marquesina">
-        Cristian Alexander Arenales Morales - Carnet: 0900-26-3438
+        Cristian Alexander Arenales Morales | Carnet: 0900-26-3438
     </marquee>
 
-    <!-- Header -->
+    <!-- HEADER HERO -->
     <header class="hero">
 
+        <!-- VIDEO -->
         <video autoplay muted loop playsinline class="video-fondo">
             <source src="video/promo.mp4" type="video/mp4">
         </video>
 
+        <!-- CAPA OSCURA -->
         <div class="capa"></div>
 
+        <!-- MENÚ -->
+        <nav>
+            <ul>
+                <li><a href="#quienes">Quiénes Somos</a></li>
+                <li><a href="#mision">Misión y Visión</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#proveedores">Proveedores</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+                <li><a href="#contacto">Contáctenos</a></li>
+            </ul>
+        </nav>
+
+        <!-- TEXTO -->
         <div class="contenido-header">
             <h1>VEENDERY</h1>
-            <p>Venta de Licencias de Software</p>
+
+            <p>
+                Venta Profesional de Licencias de Software
+            </p>
+
+            <a href="#productos" class="btn">
+                Ver Productos
+            </a>
         </div>
 
     </header>
 
-    <!-- Menú -->
-    <nav>
-        <ul>
-            <li><a href="#quienes">Quiénes Somos</a></li>
-            <li><a href="#mision">Misión y Visión</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#proveedores">Proveedores</a></li>
-            <li><a href="#clientes">Clientes</a></li>
-            <li><a href="#contacto">Contáctenos</a></li>
-        </ul>
-    </nav>
-
-    <!-- Slider -->
+    <!-- SLIDER -->
     <section class="slider">
         <img id="slider-img" src="img/slide1.jpg">
     </section>
 
-    <!-- Quienes Somos -->
+    <!-- QUIÉNES SOMOS -->
     <section id="quienes" class="contenido">
+
         <h2>Quiénes Somos</h2>
 
         <img src="img/alumno.jpg" class="foto-alumno">
 
         <p>
-            Veendery es una empresa dedicada a la venta de licencias de software
-            originales para estudiantes, empresas y profesionales.
-            Ofrecemos productos digitales seguros, accesibles y de alta calidad.
+            Veendery es una empresa especializada en la venta de licencias
+            originales de software para estudiantes, empresas y profesionales.
+            Nuestro objetivo es brindar soluciones digitales modernas,
+            seguras y accesibles.
         </p>
+
     </section>
 
-    <!-- Misión y Visión -->
-    <section id="mision" class="contenido">
+    <!-- MISIÓN Y VISIÓN -->
+    <section id="mision" class="contenido fondo">
+
         <h2>Misión</h2>
+
         <p>
-            Proporcionar licencias de software confiables y accesibles para mejorar
-            la productividad tecnológica de nuestros clientes.
+            Ofrecer licencias de software confiables y accesibles
+            que permitan mejorar la productividad tecnológica.
         </p>
 
         <h2>Visión</h2>
+
         <p>
-            Ser la empresa líder en distribución de software digital en Guatemala
-            y Latinoamérica.
+            Convertirnos en una empresa líder en distribución de software
+            digital en Guatemala y Latinoamérica.
         </p>
+
     </section>
 
-    <!-- Productos -->
+    <!-- PRODUCTOS -->
     <section id="productos" class="contenido">
+
         <h2>Nuestros Productos</h2>
 
         <div class="cards">
@@ -93,7 +114,7 @@
 
             <div class="card">
                 <img src="img/office.jpg">
-                <h3>Microsoft Office 365</h3>
+                <h3>Office 365</h3>
                 <p>Q250.00</p>
             </div>
 
@@ -104,10 +125,12 @@
             </div>
 
         </div>
+
     </section>
 
-    <!-- Proveedores -->
-    <section id="proveedores" class="contenido">
+    <!-- PROVEEDORES -->
+    <section id="proveedores" class="contenido fondo">
+
         <h2>Nuestros Proveedores</h2>
 
         <div class="cards">
@@ -128,10 +151,12 @@
             </div>
 
         </div>
+
     </section>
 
-    <!-- Clientes -->
+    <!-- CLIENTES -->
     <section id="clientes" class="contenido">
+
         <h2>Nuestros Clientes</h2>
 
         <ul class="clientes">
@@ -140,10 +165,12 @@
             <li>💼 Soluciones Empresariales</li>
             <li>🎓 Universidad Virtual GT</li>
         </ul>
+
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="contenido">
+    <!-- CONTACTO -->
+    <section id="contacto" class="contenido fondo">
+
         <h2>Contáctenos</h2>
 
         <p>📍 Ciudad de Guatemala</p>
@@ -156,30 +183,33 @@
             <a href="#">TikTok</a>
         </div>
 
-        <!-- Mapa -->
+        <!-- MAPA -->
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18..."
-            width="600"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.5187466207617!2d-90.506882!3d14.634915"
+            width="80%"
             height="300"
-            style="border:0;"
+            style="border:0; border-radius:15px;"
             allowfullscreen=""
             loading="lazy">
         </iframe>
 
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
+
         <p>
             "Conocereis la verdad y la verdad os hará libre"
         </p>
 
         <p>
-            © 2026 Veendery
+            © 2026 VEENDERY
         </p>
+
     </footer>
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
