@@ -1,7 +1,7 @@
 let imagenes = [
-    "img/slide1.jpg",
-    "img/slide2.jpg",
-    "img/slide3.jpg"
+    "img/slide1.png",
+    "img/slide2.png",
+    "img/slide3.png"
 ];
 
 let index = 0;
