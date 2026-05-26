@@ -18,3 +18,19 @@ function cambiarImagen(){
 }
 
 setInterval(cambiarImagen,3000);
+
+/* POPUP PRODUCTOS */
+
+function mostrarInfo(titulo, descripcion){
+
+    document.getElementById("popup").style.display = "flex";
+
+    document.getElementById("popup-titulo").innerText = titulo;
+
+    document.getElementById("popup-texto").innerText = descripcion;
+}
+
+function cerrarPopup(){
+
+    document.getElementById("popup").style.display = "none";
+}

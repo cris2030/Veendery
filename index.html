@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Veendery</title>
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -69,10 +72,16 @@
 
         <div class="cards">
 
-            <div class="card">
-                <img src="img/Windows 11.png">
-                <h3>Windows 11 Pro</h3>
-                <p>Q350.00</p>
+            <div class="card"
+                onclick="mostrarInfo(
+                'Windows 11 Pro',
+                'Sistema operativo moderno, rápido y seguro ideal para gaming y productividad.'
+                )">
+                    <img src="img/Windows 11.png">
+
+                    <h3>Windows 11 Pro</h3>
+
+                    <p>Q350.00</p>
             </div>
 
             <div class="card">
@@ -264,7 +273,23 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- VENTANA FLOTANTE -->
 
+    <div id="popup" class="popup">
+
+        <div class="popup-contenido">
+
+            <span class="cerrar" onclick="cerrarPopup()">
+                &times;
+            </span>
+
+            <h2 id="popup-titulo"></h2>
+
+            <p id="popup-texto"></p>
+
+        </div>
+
+    </div>
 </body>
 
 </html>
